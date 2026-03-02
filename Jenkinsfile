@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clone Repo') {
             steps {
-                git 'https://github.com/Wakas1234/devops-docker-app.git'
+                git branch: 'main', url: 'https://github.com/Wakas1234/devops-docker-app.git'
             }
         }
 
